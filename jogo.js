@@ -20,7 +20,7 @@ tempo -= 1
 if (tempo<0){
   clearInterval(cronometro)
   clearInterval(criaMosca)
-  alert('Ganhou parabens mula')
+  window.location.href='vitoria.html' // redireciona  para a pagina de fim de jogo.
 } else {
 document.getElementById('cronometro').innerHTML = tempo  
 }
