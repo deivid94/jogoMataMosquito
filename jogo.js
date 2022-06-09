@@ -5,10 +5,34 @@ var largura = 0;
 var vidas = 1;
 var tempo = 10;
 
+
+ var criaMosquitoTempo = 1500
+
+var nivel = window.location.search // recupera o 'nivel do jogo '
+nivel= (nivel.replace('?','')) // remove o ponto de interrogacao da string nivel
+
+if (nivel === 'normal' ){
+  //1500
+
+  criaMosquitoTempo = 1500
+  
+
+}else if(nivel === 'dificil'){
+  //1000 
+  criaMosquitoTempo = 1000
+}else if (nivel === 'expert'){
+  //750
+
+  criaMosquitoTempo = 750
+}
+
+
+
+
 function ajustaTamanhoPalcoJogo() {
   altura = window.innerHeight;
   largura = window.innerWidth;
-  console.log(largura, altura);
+  console.loglargura, altura;
 }
 
 ajustaTamanhoPalcoJogo();
